@@ -3,6 +3,7 @@ import CardWrapper, { Card } from '@/app/ui/dashboard/cards';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import {
   CardsSkeleton,
@@ -10,6 +11,9 @@ import {
   RevenueChartSkeleton,
 } from '../../ui/skeletons';
 
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 export default async function Page() {
   // const revenue = await fetchRevenue();
   // const latestInvoices = await fetchLatestInvoices();
